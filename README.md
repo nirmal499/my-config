@@ -1,6 +1,6 @@
 # my-config
 
-The plugin manager that I am using for vim is [Vim-plug](https://github.com/junegunn/vim-plug). Go through its installation section
+The plugin manager that I am using for vim is [Vim-plug](https://github.com/junegunn/vim-plug). For more details go through its installation section.
 
 ### Plugins
 
@@ -12,5 +12,7 @@ The plugin manager that I am using for vim is [Vim-plug](https://github.com/june
 1. [Vim Closetag](https://github.com/alvan/vim-closetag) for Auto close (X)HTML tags
 1. [Auto Pairs](https://github.com/jiangmiao/auto-pairs) for Brackets pairs
 1. [Vim Tmux Navigator](https://github.com/christoomey/vim-tmux-navigator) for Navigation between tmux panes and vim splits
+
+In **tmux** I am using [tpm](https://github.com/tmux-plugins/tpm) plugin manager. For more details go through its installation section.
 
 **Color Scheme for Gnome Terminal** I use is also gruvbox. For setting it up I used [Gogh](https://github.com/Mayccoll/Gogh). Follow its instruction
