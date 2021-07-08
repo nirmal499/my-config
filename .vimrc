@@ -14,6 +14,8 @@ set laststatus=2
 set wildmenu
 set nowrap
 filetype plugin indent on
+filetype plugin on
+
 
 set expandtab                   " Expand tabs to spaces
 set autoindent smartindent      " auto/smart indent
@@ -45,8 +47,8 @@ set incsearch               " show the `best match so far' astyped
 set ignorecase smartcase    " make searches case-insensitive, unless they contain upper-case letters
 
 set backspace=indent,eol,start  " allow backspacing over everything.
-set timeoutlen=500              " how long it wait for mapped commands
-set ttimeoutlen=100             " faster timeout for escape key and others
+set timeoutlen=1500              " how long it wait for mapped commands
+set ttimeoutlen=1500             " faster timeout for escape key and others
 
 set scrolloff=5             " Start scrolling n lines before horizontal border of window.
 set sidescrolloff=7         " Start scrolling n chars before end of screen.
@@ -68,8 +70,11 @@ call plug#begin('~/.vim/plugged')
     " ---> closing braces and brackets <---
     Plug 'jiangmiao/auto-pairs'
     Plug 'christoomey/vim-tmux-navigator'
+
+    Plug 'preservim/nerdcommenter'
 call plug#end()
 
+let mapleader=" "
 
 set background=dark
 colorscheme gruvbox
@@ -114,3 +119,8 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " ---> files on which to activate tags auto-closing <---
   let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.vue,*.phtml,*.js,*.jsx,*.coffee,*.erb'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Clear Highlights
+nnoremap \ :noh<return>
+
+
