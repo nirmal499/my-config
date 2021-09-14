@@ -1,6 +1,9 @@
 " Basic Settings
 
+filetype plugin indent on
 syntax on
+" Use new regular expression engine
+" set re=0
 set number
 set relativenumber
 set nocompatible
@@ -13,8 +16,7 @@ set noerrorbells
 set laststatus=2
 set wildmenu
 set nowrap
-filetype plugin indent on
-filetype plugin on
+set hidden
 
 
 set expandtab                   " Expand tabs to spaces
@@ -56,7 +58,7 @@ set sidescroll=1            " The minimal number of columns to scroll horizontal
 
 " While pressing Shift , use mouse to drag through the line you want to copy
 " then press Ctrl+Shift+c to copy
-set mouse=a
+"set mouse=a
 
 call plug#begin('~/.vim/plugged')
     Plug 'morhetz/gruvbox'
@@ -123,4 +125,10 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " Clear Highlights
 nnoremap \ :noh<return>
 
+augroup SyntaxSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+augroup END
 
+" :update saves the file only if it was changed
+nnoremap ZS :up<cr>
