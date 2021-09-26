@@ -122,7 +122,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
   let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.vue,*.phtml,*.js,*.jsx,*.coffee,*.erb'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Clear Highlights
+" Clear All Highlights
 nnoremap \ :noh<return>
 
 augroup SyntaxSettings
